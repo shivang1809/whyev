@@ -154,7 +154,7 @@ body{
 .content{
     width: 100%;
     height: 100vh;
-    background: url('../Images/car2.jpg') top right no-repeat;
+    background: url('../car2.jpg') top right no-repeat;
     background-size: cover;
     position: relative;
     padding-left: 160px;
@@ -167,11 +167,11 @@ body{
 }
 @keyframes animation1 {
     from{
-        background: url('../Images/car2.jpg') top right no-repeat;
+        background: url('../car2.jpg') top right no-repeat;
         background-size: cover;
     }
     to{
-        background: url('../Images/car.jpg') top right no-repeat;
+        background: url('../car.jpg') top right no-repeat;
         background-size: cover;
     }
 }
