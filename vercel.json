@@ -1,13 +1,27 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "index.php",
       "use": "vercel-php@0.9.0"
+    },
+    {
+      "src": "Images/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Script/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Style/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/(Images|Script|Style)/(.*)",
+      "dest": "/$1/$2"
     },
     {
       "src": "/(.*)",
